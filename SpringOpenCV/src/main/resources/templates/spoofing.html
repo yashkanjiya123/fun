@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Image Spoofing Detection</title>
+</head>
+<body>
+    <h1>Image Spoofing Detection</h1>
+
+    <form action="/detectSpoofing" method="post" enctype="multipart/form-data">
+        <input type="file" name="file" accept="image/*">
+        <button type="submit">Detect Spoofing</button>
+    </form>
+
+    <div th:if="${result}">
+        <h2 th:text="${result}"></h2>
+    </div>
+</body>
+</html>

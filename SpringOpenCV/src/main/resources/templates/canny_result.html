@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <!-- head content -->
+</head>
+<body>
+    <h1>Canny Edge Detection Result</h1>
+
+   <!-- <h2>Original Image</h2>
+    <img th:src="@{'data:image/png;base64,' + ${originalImage}}" alt="Original Image">
+
+    <h2>Detected Edges</h2>
+    <img th:src="@{'data:image/png;base64,' + ${edgesImage}}" alt="Detected Edges">-->
+     <h2>Original Image</h2>
+    <img th:if="${originalImage != null}" th:src="@{'data:image/' + ${imageFormat} + ';base64,' + ${originalImage}}" alt="Original Image">
+
+    <h2>Detected Edges</h2>
+    <img th:if="${edgesImage != null}" th:src="@{'data:image/' + ${imageFormat} + ';base64,' + ${edgesImage}}" alt="Detected Edges">
+    
+</body>
+</html>
