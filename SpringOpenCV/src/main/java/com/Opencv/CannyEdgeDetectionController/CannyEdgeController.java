@@ -2,6 +2,7 @@ package com.Opencv.CannyEdgeDetectionController;
 
 import java.util.Base64;
 
+
 import org.opencv.core.Mat;
 import org.opencv.core.MatOfByte;
 import org.opencv.core.Size;
